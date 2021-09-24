@@ -159,7 +159,7 @@ class NsmcProcessor(object):
         self.args = args
 
     def get_labels(self):
-        return ["0", "1"]
+        return ["0", "1", "2", "3", "4", "5", "6", "7", "8"]
 
     @classmethod
     def _read_file(cls, input_file):
@@ -418,7 +418,7 @@ seq_cls_processors = {
     "hate-speech": HateSpeechProcessor,
 }
 
-seq_cls_tasks_num_labels = {"kornli": 3, "nsmc": 2, "paws": 2, "korsts": 1, "question-pair": 2, "hate-speech": 3}
+seq_cls_tasks_num_labels = {"kornli": 3, "nsmc": 9, "paws": 2, "korsts": 1, "question-pair": 2, "hate-speech": 3}
 
 seq_cls_output_modes = {
     "kornli": "classification",
